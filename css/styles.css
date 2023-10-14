@@ -1,185 +1,277 @@
-.letra-grande{
-    text-align: center;
-    padding: 5px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-ul{
-    list-style-type: none
-}
-h1,h2,h3{
-    font-style:oblique;
-    font-weight: 100;
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    color: #8884FF;
-}
-a{
-    text-decoration: none;
-    color:#8884FF;
-    text-align: center;
-}
-*{
-    margin:0;
-    padding:0;
-}
-.cosas-linea li{
-    display: inline;
-}
-.logo{
-    display: block;
-    margin: 0 auto;
+#carouselExample {
+  width: 70%;
+  margin: 0 auto;
 }
 
-header{
-    background-color:#cbaa9d ;
-    padding: 10px;
-    position: sticky;
-    top: 0;
+.carousel-item img {
+  height: 68vh;
 }
 
-#cuadrodearitos{
-    display: grid;
-    grid-template-areas:
-    "foto1 foto1 foto2 foto2"
-    "foto3 foto3 foto4 foto4"
-    "foto5 foto5 foto6 foto6"
-    "foto7 foto7 foto8 foto8";
-    gap: 15px;
-    margin: 30px 0;
+/*Medias queries*/
+@media (min-widht: 520px) {
+  .carousel-item img {
+    width: 40vh;
+  }
 }
-.foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8{
-    max-width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+@media (min-widht: 768px) {
+  .carousel-item img {
+    height: 50vh;
+  }
 }
-
-.foto1{
-    background-image: url(../img/arito1.jpg);
-    grid-area: foto1; 
+@media (min-widht: 968px) {
+  .carousel-item img {
+    height: 60vh;
+  }
 }
-
-.foto2{
-    background-image: url(../img/arito2.jpg);
-    grid-area: foto2;
+@media (min-widht: 1300px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+  .carousel-item img #carouselExample {
+    width: 30%;
+  }
 }
-
-.foto3{
-    background-image: url(../img/arito3.jpg);
-    grid-area: foto3;
+@media (min-widht: 1920px) {
+  .carousel-item img {
+    height: 50vh;
+  }
+  .carousel-item img #carouselExample {
+    width: 20%;
+  }
 }
-
-.foto4{
-    background-image: url(../img/arito4.jpg);
-    grid-area: foto4;
-}
-
-.foto5{
-    background-image: url(../img/arito5.jpg);
-    grid-area: foto5;
+.letra-grande {
+  text-align: center;
+  padding: 5px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.foto6{
-    background-image: url(../img/arito6.jpg);
-    grid-area: foto6;
+ul {
+  list-style-type: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.foto7{
-    background-image: url(../img/arito7.jpg);
-    grid-area: foto7;
+h1, h2, h3 {
+  font-style: oblique;
+  font-weight: 100;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  color: #8884FF;
 }
 
-.foto8{
-    background-image: url(../img/arito8.jpg);
-    grid-area: foto8;
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.botoncito{
-    margin: auto;
+* {
+  margin: 0;
+  padding: 0;
+}
+* html {
+  height: 100%;
 }
 
-.navegador{
-    top: 0;
+header {
+  background-color: #cbaa9d;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 12;
 }
-.nav-link{
-    color: #8884FF;
-}
-
-.carousel-item img{
-    height: 80vh;
-    width: 80vh;
-}
-
-@media (min-width:520px){
-    .carousel-item img{
-        height: 70vh;    
-    }
+header body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-@media (min-width:768px) {
-    .carousel-item img{
-        height: 70vh;    
-    }
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  background-color: #cbaa9d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-top: auto;
 }
 
-@media (min-width: 1024) {
-    .carousel-item img {
-        height: 70vh;
-    }
-    #carouselExample{
-        width: 70%;
-    }
+.avislogohead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 400px;
 }
 
-@media (min-width:1700px) {
-    .carousel-item img{
-        height: 50vh;    
-    }
+/*Parrafos de letras*/
+.parrafos {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
 }
 
+/* ELEMENTOS DE FOOTER*/
+.logof {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.redessocialespapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.elfootermenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0rem;
+}
+
+.redessocialespapa {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px rgb(70, 59, 14);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 3rem;
+}
+
+.redessocialespapa:hover {
+  background-color: black;
+}
+
+.iconos {
+  height: 35px;
+  width: 40px;
+}
+
+/*Animaciones*/
+.gradiente {
+  height: 200px;
+  width: 200px;
+}
+
+/*IMAGENES ANILLOS*/
 .container-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 25px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  display: wrap;
+}
+
+.card-columns .card {
+  display: inline-block;
+  width: 100%;
 }
 
 .card {
-    max-width: 50%%; 
+  max-width: 100%;
 }
 
-@media (min-width:768px) {
-    .container-cards{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
-        justify-content: center;
-        
-    }
+/*Media queries*/
+@media (min-width: 768px) {
+  .container-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1600px) {
+  .container-cards {
+    top: auto;
+    position: sticky;
+  }
+}
+.card-img-top {
+  max-width: 100%;
+  width: 400px;
 }
 
-@media (min-width:1000px) {
-    .container-cards{
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
-        justify-content: center;
-        
-    }
+/* pagina de carrito*/
+.card-text {
+  text-align: center;
 }
-@media (min-width:1600px) {
-    .container-cards{
-        top: auto;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        justify-content: center;
-        position: sticky;
-    }
+
+#cuadrodearitos {
+  display: grid;
+  grid-template-areas: "foto1 foto1 foto2 foto2" "foto3 foto3 foto4 foto4" "foto5 foto5 foto6 foto6" "foto7 foto7 foto8 foto8";
+  gap: 15px;
+  margin: 30px 0;
 }
-.card-img-top{
-    height: 300px;
-    width: 400px;
+
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8 {
+  max-width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.foto1 {
+  background-image: url(../img/arito1.jpg);
+  grid-area: foto1;
+}
+
+.foto2 {
+  background-image: url(../img/arito2.jpg);
+  grid-area: foto2;
+}
+
+.foto3 {
+  background-image: url(../img/arito3.jpg);
+  grid-area: foto3;
+}
+
+.foto4 {
+  background-image: url(../img/arito4.jpg);
+  grid-area: foto4;
+}
+
+.foto5 {
+  background-image: url(../img/arito5.jpg);
+  grid-area: foto5;
+}
+
+.foto6 {
+  background-image: url(../img/arito6.jpg);
+  grid-area: foto6;
+}
+
+.foto7 {
+  background-image: url(../img/arito7.jpg);
+  grid-area: foto7;
+}
+
+.foto8 {
+  background-image: url(../img/arito8.jpg);
+  grid-area: foto8;
+}
+
+.botoncito {
+  margin: auto;
+}
+
+.navegador {
+  top: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
